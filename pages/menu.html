@@ -25,13 +25,19 @@
   <link rel="stylesheet"
     href="/css/css.css"
     type="text/css" />
+    
+    <style>
+      .mySlides {
+        display: none
+      }
+    </style>
 </head>
 <!--This will contain the body of the home page it will use the semantic tags header nav main and footer for easy navigation by screen readers-->
 
 <body>
   <!--The header element will contain the heading fror the web page-->
   <header class="w3-container w3-dark-grey w3-mobile">
-    <h1>The Haukai restaraunt</h1>
+    <h1 class="">The Haukai restaraunt</h1>
   </header>
   <!--The nav element will be a container for the navigation bar it uses w3 bar class-->
   <nav class="w3-bar w3-light-grey w3-mobile">
@@ -51,7 +57,7 @@
 
   </nav>
   <!--The main element is a container for the content of the webpage-->
-  <main class="w3-container w3-light-grey w3-mobile w3-center">
+  <main class="w3-container w3-light-grey w3-mobile w3-center w3-border">
     <h2>Menu</h2>
     <!-- the following code for the menu images slide show is based on open source code from w3schools. w3css slideshow
     all images searched from googleimages. creative commons, advanced search features -->
@@ -79,9 +85,9 @@
         alt="a mini pavalova">
     </div>
     <!-- Tables are read from left to right. top to bottom. A screen reader will see the h2 tag first read this then move in to the table. the table from left to right says what the menu item is then a desciption of the meal/item then what it costs. this is a logical menu structure represented by the table tag -->
-    <div class="w3-container w3-mobile w3-center  ">
-      <h3>Appitizers</h3>
-      <table class="w3-table">
+    <div class="w3-container w3-mobile w3-center w3-card ">
+      <h3 class="">Appitizers</h3>
+      <table class="w3-table ">
         <thead>
           <tr>
             <!-- After running this code through google chromes accessability it suggested that the lack of table headers presented an accessability issue for screen readers. added <th> elements to all tables. It looks ugly, cant we hide this stuff from the sighted???-->
@@ -118,8 +124,9 @@
       </table>
       <hr>
     </div>
+    <br>
 
-    <div class="w3-container w3-mobile w3-center">
+    <div class="w3-container w3-mobile w3-center w3-card">
       <h3>Main</h3>
       <table class="w3-table">
         <thead>
@@ -163,8 +170,9 @@
       </table>
       <hr>
     </div>
+    <br>
 
-    <div class="w3-container w3-mobile w3-center">
+    <div class="w3-container w3-mobile w3-center w3-card">
       <h3>Dessert</h3>
       <table class="w3-table">
         <thead>
@@ -197,9 +205,11 @@
       </table>
       <hr>
     </div>
+    <br>
 
-    <div class="w3-container w3-mobile w3-center">
-      <h2>Drinks Menu</h2>
+
+    <h2 class="">Drinks</h2>
+    <div class="w3-container w3-mobile w3-center w3-card">
       <h3>Wine List</h3>
       <!-- im not sure someone using a screen reader will get the best from the drinks menu. There needs to be some way to add more descriptions to the table elements -->
       <table class="w3-table">
@@ -288,7 +298,8 @@
       </div>
       <hr>
     </div>
-    <div class="w3-container w3-mobile w3-center">
+    <br>
+    <div class="w3-container w3-mobile w3-center w3-card">
       <h3>Beer and Cider</h3>
       <table class="w3-table w3-center">
         <thead>
@@ -328,8 +339,8 @@
       </table>
       <hr>
     </div>
-
-    <div class="w3-container w3-mobile w3-center">
+    <br>
+    <div class="w3-container w3-mobile w3-center w3-card">
       <h3>Non-Alchoholic</h3>
       <table class="w3-table w3-center">
         <thead>
@@ -359,8 +370,9 @@
           <td class="w3-right-align">3.50</td>
         </tr>
       </table>
-      <hr>
+
     </div>
+    <br>
   </main>
   <!--The footer container will contain the copyright and author information-->
   <footer class="w3-container w3-dark-grey w3-mobile">

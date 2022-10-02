@@ -16,11 +16,7 @@
   height: 100%;
   width: 100%;
 }
-.map {
-  position: absolute;
-  display: block;
-  width: max-content;
-}
+
 .container {
   position: relative;
   width: 100%;
@@ -53,13 +49,8 @@
   margin-right: auto;
 }
 
-.mySlides {
-  display: none;
-  max-height: 500px;
-}
-.reservationform {
-  width: 100%;
-}
+
+
 
 #cssvalid {
   float: right;
